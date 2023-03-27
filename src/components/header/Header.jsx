@@ -1,6 +1,7 @@
 import Button from "../button/Button"
+import Text from "../text/Text"
 import TransparentButton from "../transparent-button/TransparentButton"
-import { StyledA, StyledHeader, StyledLi, StyledLogo, StyledNav, StyledUl, StyledDiv, StyledH1, StyledSpan, StyledP, StyledButton, StyledSection} from "./styles"
+import { StyledA, StyledHeader, StyledLi, StyledLogo, StyledNav, StyledUl, StyledDiv, StyledH1, StyledSpan, StyledButton, StyledSection} from "./styles"
 
 
 const Header = () => {
@@ -19,7 +20,7 @@ const Header = () => {
         <StyledSection>
         <TransparentButton text = 'Launching Infinite Workspaces.' link= 'Learn More'/>
         <StyledH1>Where the world builds <StyledSpan> software </StyledSpan></StyledH1>
-        <StyledP>Our landing page template works on all devices, so you only have to set it up once, and get beautiful results forever.</StyledP>
+        <Text text= 'Our landing page template works on all devices, so you only have to set it up once, and get beautiful results forever.'/>
         <Button width='300px' text='Get Started For Free'></Button>
         <StyledButton>Explore Docs</StyledButton>
         </StyledSection>

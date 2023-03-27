@@ -5,10 +5,9 @@ import styled from "styled-components";
 const StyledHeader = styled.header`
     background-image: url('./public/images/hero-illustration.svg');
     background-repeat: no-repeat;
-    background-position: top, left;
-    background-size: 600%;
-
-
+    height: auto;
+    background-position: center;
+    background-size: cover;
 `;
 
 
@@ -53,10 +52,11 @@ const StyledLogo = styled.img`
 const StyledH1 = styled.h1`
     font-family: 'Uncut Sans Semibold', sans-serif;
     font-weight: 600;
-    font-size: 64px;
+    font-size: 60px;
     text-align: center;
-    margin-bottom: 1rem;
     line-height: 97%;
+    margin: 0 1rem;
+    margin-bottom: 1rem;
 
 `
 
@@ -64,13 +64,7 @@ const StyledSpan = styled.span`
     font-family: 'Uncut Sans Semibold Italic', sans-serif;
 `
 
-const StyledP = styled.p`
-    color: #9CA3AF;
-    font-size: 1.2rem;
-    text-align: center;
-    margin: 0 1rem;
-    margin-bottom: 3rem;
-`
+
 
 const StyledButton = styled.button`
     background: linear-gradient(180deg, rgba(253, 253, 253, 0.11) 18.75%, rgba(255, 255, 255, 0.04) 69.27%);
@@ -91,9 +85,9 @@ const StyledButton = styled.button`
 `
 
 const StyledSection = styled.section`
-    background: linear-gradient(180deg, #111827 0%, #192130 100%);
+    background: linear-gradient(180deg, transparent 0%, #192130 100%);
     padding-bottom: 4rem;
 `
 
-export{StyledHeader, StyledNav, StyledLi, StyledUl, StyledA, StyledLogo, StyledDiv, StyledH1, StyledSpan, StyledP, StyledButton, StyledSection}
+export{StyledHeader, StyledNav, StyledLi, StyledUl, StyledA, StyledLogo, StyledDiv, StyledH1, StyledSpan, StyledButton, StyledSection}
 
