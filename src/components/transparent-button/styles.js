@@ -28,7 +28,7 @@ const StyledTransparentButtonA = styled.a`
 `
 
 const StyledArrow = styled.img`
-    width: 20px;
+    width: 15px;
     position: absolute
 
 `

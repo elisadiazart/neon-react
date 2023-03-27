@@ -7,7 +7,6 @@ const StyledHeader = styled.header`
     background-repeat: no-repeat;
     background-position: top, left;
     background-size: 600%;
-    height: 100vh;
 
 
 `;
@@ -93,7 +92,7 @@ const StyledButton = styled.button`
 
 const StyledSection = styled.section`
     background: linear-gradient(180deg, #111827 0%, #192130 100%);
-    height: calc(100vh - 169px);
+    padding-bottom: 4rem;
 `
 
 export{StyledHeader, StyledNav, StyledLi, StyledUl, StyledA, StyledLogo, StyledDiv, StyledH1, StyledSpan, StyledP, StyledButton, StyledSection}
