@@ -8,7 +8,7 @@ const Header = () => {
     return <StyledHeader>
         <StyledNav>
             <StyledUl>
-                <StyledLogo src='./public/images/logo.svg'></StyledLogo>
+                <StyledLogo src='/images/logo.svg'></StyledLogo>
                 <StyledDiv>
                 <StyledLi>
                     <StyledA>Sign in</StyledA>

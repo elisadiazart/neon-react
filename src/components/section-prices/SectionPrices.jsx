@@ -13,7 +13,7 @@ const SectionPrices = () => {
         <div>
         {PRICES.map(card=> (
         <StyledPrice key={card.key} background={card.color}>
-            <StyledPopUp display={card.display}><img src="/public/images/fire.svg" alt="Popular" /> Most popular</StyledPopUp>
+            <StyledPopUp display={card.display}><img src="/images/fire.svg" alt="Popular" /> Most popular</StyledPopUp>
             <StyledTitle>{card.title}</StyledTitle>
             <StyledRealPrice>$<StyledNumber>{card.number}</StyledNumber><StyledPerX>/mo</StyledPerX></StyledRealPrice>
             <StyledDescription>For teams building apps for many public & private users.</StyledDescription>

@@ -1,12 +1,12 @@
 @font-face {
-    font-family: 'Uncut Sans Semibold';
-    src: url('/public/fonts/Uncut-Sans-Semibold.otf');
-  }
+	font-family: 'Uncut Sans Semibold';
+	src: url('/fonts/Uncut-Sans-Semibold.otf');
+}
 
-  @font-face {
-    font-family: 'Uncut Sans Semibold Italic';
-    src: url('/public/fonts/Uncut-Sans-SemiboldOblique.otf');
-  }
+@font-face {
+	font-family: 'Uncut Sans Semibold Italic';
+	src: url('/fonts/Uncut-Sans-SemiboldOblique.otf');
+}
 
 body {
 	font-family: 'Inter', sans-serif;

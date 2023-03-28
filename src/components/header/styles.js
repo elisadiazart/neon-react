@@ -3,7 +3,7 @@ import styled from "styled-components";
 
 
 const StyledHeader = styled.header`
-    background-image: url('./public/images/hero-illustration.svg');
+    background-image: url('/images/hero-illustration.svg');
     background-repeat: no-repeat;
     height: auto;
     background-position: center;
@@ -38,7 +38,7 @@ const StyledDiv = styled.div`
 
 const StyledA = styled.a`
     color: grey;
-    font-weight: 600;
+    font-weight: 400;
 
 
 `
@@ -87,6 +87,7 @@ const StyledButton = styled.button`
 const StyledSection = styled.section`
     background: linear-gradient(180deg, transparent 0%, #192130 100%);
     padding-bottom: 4rem;
+    
 `
 
 export{StyledHeader, StyledNav, StyledLi, StyledUl, StyledA, StyledLogo, StyledDiv, StyledH1, StyledSpan, StyledButton, StyledSection}

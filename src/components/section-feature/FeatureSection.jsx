@@ -5,7 +5,7 @@ import ReadyForCard from "../ready-for-card/ReadyForCard"
 const FeatureSection = () => {
     return <StyledFeatures>
     <Title text='Focus on solving bigger problems'/>
-    <StyledFeaturesImage src="/public/images/features.svg" alt=""></StyledFeaturesImage>
+    <StyledFeaturesImage src="/images/features.svg" alt=""></StyledFeaturesImage>
     <div>
         <ReadyForCard/>
     </div>

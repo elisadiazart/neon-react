@@ -72,4 +72,5 @@ const StyledInclude = styled.h5`
     margin: 1rem 0;
 `
 
+
 export {StyledPricesSection, StyledPrice, StyledTitle, StyledRealPrice, StyledNumber, StyledPerX, StyledDescription, StyledInclude, StyledPopUp}
