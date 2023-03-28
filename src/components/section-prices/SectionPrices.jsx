@@ -4,7 +4,7 @@ import Button from "../button/Button"
 import Check from "../check/Check"
 import Text from "../text/Text"
 import Title from "../titles/Titles"
-import { StyledDescription, StyledInclude, StyledNumber, StyledPerX, StyledPrice, StyledPricesSection, StyledRealPrice, StyledTitle } from "./styles"
+import { StyledDescription, StyledInclude, StyledNumber, StyledPerX, StyledPrice, StyledPricesSection, StyledRealPrice, StyledTitle, StyledPopUp } from "./styles"
 
 const SectionPrices = () => {
     return <StyledPricesSection>
@@ -13,6 +13,7 @@ const SectionPrices = () => {
         <div>
         {PRICES.map(card=> (
         <StyledPrice key={card.key} background={card.color}>
+            <StyledPopUp display={card.display}><img src="/public/images/fire.svg" alt="Popular" /> Most popular</StyledPopUp>
             <StyledTitle>{card.title}</StyledTitle>
             <StyledRealPrice>$<StyledNumber>{card.number}</StyledNumber><StyledPerX>/mo</StyledPerX></StyledRealPrice>
             <StyledDescription>For teams building apps for many public & private users.</StyledDescription>

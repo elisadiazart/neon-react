@@ -7,15 +7,17 @@ export const PRICES = [
         number: '49',
         include:'Features include:',
         color: 'transparent',
-        checklist: ['Unlimited placeholder texts','Consectetur adipiscing elit', 'Excepteur sint occaecat cupidatat', 'Officia deserunt mollit anim']
+        checklist: ['Unlimited placeholder texts','Consectetur adipiscing elit', 'Excepteur sint occaecat cupidatat', 'Officia deserunt mollit anim'],
+        display:'none'
     },
     {
         key: v4(),
         title: 'Business',
         number: '79',
-        color: '#192130',
+        color: '#1F2937',
         include:'Everything in Starter, plus:',
-        checklist: ['Consectetur adipiscing elit','Consectetur adipiscing elit', 'Excepteur sint occaecat cupidatat', 'Officia deserunt mollit anim','Excepteur sint occaecat cupidatat','Officia deserunt mollit anim']
+        checklist: ['Consectetur adipiscing elit','Consectetur adipiscing elit', 'Excepteur sint occaecat cupidatat', 'Officia deserunt mollit anim','Excepteur sint occaecat cupidatat','Officia deserunt mollit anim'],
+        display:'flex'
     },
     {
         key: v4(),
@@ -23,7 +25,8 @@ export const PRICES = [
         number: '129',
         include:'Features include:',
         color: 'transparent',
-        checklist: ['Unlimited placeholder texts','Consectetur adipiscing elit', 'Excepteur sint occaecat cupidatat', 'Officia deserunt mollit anim']
+        checklist: ['Unlimited placeholder texts','Consectetur adipiscing elit', 'Excepteur sint occaecat cupidatat', 'Officia deserunt mollit anim'],
+        display:'none'
     }
 
 ]

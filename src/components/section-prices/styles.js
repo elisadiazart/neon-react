@@ -6,19 +6,28 @@ const StyledPricesSection = styled.section`
 
 
 const StyledPrice = styled.div`
-    margin: 0 4rem;
+    margin: 0 3rem;
     padding: 1.7rem;
     background-color: ${({ background }) => background};
     position: relative;
+    margin-bottom: 2rem;
 
-    &::after{
-        content: ${({ content }) => content};
-        width: 50px;
-        height: 50px;
-        background-color: red;
-        position: absolute;
-        top: -1rem;
-    }
+`
+
+const StyledPopUp = styled.div `
+    display: ${({ display }) => display};
+    position: absolute;
+    background-color: #A7F3D0;
+    color: #10B981;
+    top: -1rem;
+    padding: .5rem;
+    border-radius: 20px;
+    align-items: center;
+    font-size: .9rem;
+    gap: 0.5rem;
+    font-weight: 600;
+    right: 1.5rem;
+
 `
 
 const StyledTitle = styled.h3`
@@ -63,4 +72,4 @@ const StyledInclude = styled.h5`
     margin: 1rem 0;
 `
 
-export {StyledPricesSection, StyledPrice, StyledTitle, StyledRealPrice, StyledNumber, StyledPerX, StyledDescription, StyledInclude}
+export {StyledPricesSection, StyledPrice, StyledTitle, StyledRealPrice, StyledNumber, StyledPerX, StyledDescription, StyledInclude, StyledPopUp}
