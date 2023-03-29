@@ -5,7 +5,6 @@ const StyledTransparentButtonContainer = styled.div`
     display: flex;
     margin: auto;
     margin-bottom: 2rem;
-
 `
 
 const StyledTransparentButton = styled.div`
@@ -16,6 +15,10 @@ const StyledTransparentButton = styled.div`
     text-align: center;
     margin: auto;
     font-size: .8rem;
+
+    @media screen and (min-width: 1024px) {
+        margin-left: 0rem;
+    }
 `
 
 const StyledTransparentButtonA = styled.a`

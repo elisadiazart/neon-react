@@ -12,6 +12,11 @@ const StyledBrandsContainer = styled.div`
     margin-bottom: 1rem;
     padding-bottom: 2rem;
     border-bottom: 1px solid rgba(156, 163, 175, 0.11);
+    @media screen and (min-width: 1024px) {
+        width: auto;
+        gap: 5rem;
+        margin-bottom: 6rem;
+    }
 
 `
 

@@ -15,6 +15,12 @@ const StyledButton = styled.button`
     justify-content: center;
     margin: auto;
 
+    @media screen and (min-width: 1024px) {
+        margin: ${({ align }) => align};
+        padding: .7rem 1.5rem;
+        width: auto;
+    }
+
 
 `
 

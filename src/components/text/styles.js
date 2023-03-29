@@ -8,6 +8,12 @@ const StyledText = styled.p`
     margin-bottom: 3rem;
     margin-top: 1.5rem;
     line-height: 2rem;
+    
+    @media screen and (min-width: 1024px) {
+        text-align: ${({ align }) => align};
+        margin-left: 0;
+        width: ${({ width }) => width};
+    }
 `
 
 export{StyledText}

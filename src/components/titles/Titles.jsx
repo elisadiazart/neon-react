@@ -1,7 +1,7 @@
 import { StyledTitle } from "./styles"
 
-const Title = ({text}) => {
-    return <StyledTitle>{text}</StyledTitle>
+const Title = ({text, align }) => {
+    return <StyledTitle align={align}>{text}</StyledTitle>
 
 
 }

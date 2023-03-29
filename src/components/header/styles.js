@@ -8,11 +8,20 @@ const StyledHeader = styled.header`
     height: auto;
     background-position: center;
     background-size: cover;
+    @media screen and (min-width: 1024px) {
+        background-position: -100px 00px;
+        background-size: 110%;
+    }
+    
 `;
 
 
 const StyledNav = styled.nav`
     margin-bottom:6rem;
+
+    @media screen and (min-width: 1024px) {
+        padding: 0 22rem;
+    }
 
 `
 
@@ -57,6 +66,11 @@ const StyledH1 = styled.h1`
     line-height: 97%;
     margin: 0 1rem;
     margin-bottom: 1rem;
+    @media screen and (min-width: 1024px) {
+        text-align: left;
+        font-size: 75px;
+        margin-left: 0
+    }
 
 `
 
@@ -82,13 +96,39 @@ const StyledButton = styled.button`
     margin: auto;
     margin-top: 1rem;
 
+    @media screen and (min-width: 1024px) {
+        margin: 0;
+        padding: .8rem 1.5rem;
+        width: auto;
+        color: white;
+    }
+
 `
 
 const StyledSection = styled.section`
     background: linear-gradient(180deg, transparent 0%, #192130 100%);
     padding-bottom: 4rem;
+    @media screen and (min-width: 1024px) {
+        padding: 0 22rem;
+    }
+    
     
 `
 
-export{StyledHeader, StyledNav, StyledLi, StyledUl, StyledA, StyledLogo, StyledDiv, StyledH1, StyledSpan, StyledButton, StyledSection}
+const StyledContainer = styled.div`
+    @media screen and (min-width: 1024px) {
+        width: 800px;
+        padding-bottom: 6rem;
+    }
+`
+
+const StyledButtonsContainer = styled.div`
+    @media screen and (min-width: 1024px) {
+        display: flex;
+        align-items: center;
+        gap: 2rem;
+    }
+`
+
+export{StyledHeader, StyledNav, StyledLi, StyledUl, StyledA, StyledLogo, StyledDiv, StyledH1, StyledSpan, StyledButton, StyledSection, StyledContainer, StyledButtonsContainer}
 
