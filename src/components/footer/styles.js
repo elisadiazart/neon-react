@@ -7,6 +7,12 @@ const StyledAdvertisment = styled.div`
     margin: 0 1rem;
     border-radius: 6px;
     margin-bottom: 2rem;
+    @media screen and (min-width: 1024px) {
+        width: 900px;
+        margin: auto;
+        display: flex;
+        padding-top: 3rem
+    }
 
 `
 
@@ -14,6 +20,9 @@ const StyledText = styled.p`
     margin: 1.5rem 0;
     text-align: center;
     line-height: 1.5;
+    @media screen and (min-width: 1024px) {
+        text-align: left;
+    }
 `
 const StyledLi = styled.li`
     color: white;
@@ -32,7 +41,7 @@ const StyledA = styled.a`
 
 const StyledNav = styled.nav`
     margin: 0 1rem;
-
+    
 `
 
 const StyledDiv = styled.div`
@@ -45,4 +54,28 @@ const StyledDiv = styled.div`
     margin-bottom: 2rem;
 `
 
-export{StyledAdvertisment, StyledText, StyledLi, StyledA, StyledNav, StyledDiv}
+const StyledDivText = styled.div`
+    @media screen and (min-width: 1024px) {
+        width: 60%;
+        padding-left: 3rem;
+    }
+`
+
+const StyledUl = styled.ul`
+    @media screen and (min-width: 1024px) {
+            display: flex;
+            gap: 2rem;
+            justify-content: space-between;
+            padding: 4rem 0;
+            margin: 0 30.5rem;
+    }
+`
+
+const StyledLinkContainer = styled.div`
+    @media screen and (min-width: 1024px) {
+            display: flex;
+            gap: 3rem;
+    }
+`
+
+export{StyledAdvertisment, StyledText, StyledLi, StyledA, StyledNav, StyledDiv, StyledDivText, StyledUl, StyledLinkContainer}

@@ -20,6 +20,11 @@ const StyledReviewContainer = styled.div`
     margin: 3rem 2rem;
     position: relative;
     margin-bottom: 1rem;
+    @media screen and (min-width: 1024px) {
+        display: grid;
+        grid-template-columns: repeat(3, 350px);
+        justify-content: center;
+    }
 
     &::after{
         content: '';

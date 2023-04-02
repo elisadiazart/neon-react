@@ -11,7 +11,10 @@ const StyledPrice = styled.div`
     background-color: ${({ background }) => background};
     position: relative;
     margin-bottom: 2rem;
-
+    @media screen and (min-width: 1024px) {
+        width: 350px;
+        margin:  0 0;
+    }
 `
 
 const StyledPopUp = styled.div `
@@ -72,5 +75,15 @@ const StyledInclude = styled.h5`
     margin: 1rem 0;
 `
 
+const StyledDiv = styled.div`
+    @media screen and (min-width: 1024px) {
+        display: flex;
+        justify-content: center;
+        margin: auto;
+        gap: 1rem;
+        padding-bottom: 4rem; 
+    }
+`
 
-export {StyledPricesSection, StyledPrice, StyledTitle, StyledRealPrice, StyledNumber, StyledPerX, StyledDescription, StyledInclude, StyledPopUp}
+
+export {StyledPricesSection, StyledPrice, StyledTitle, StyledRealPrice, StyledNumber, StyledPerX, StyledDescription, StyledInclude, StyledPopUp, StyledDiv}

@@ -17,6 +17,10 @@ const StyledResources = styled.div`
     display: flex;
     flex-direction: column;
     gap: 2rem;
+    @media screen and (min-width: 1024px) {
+        flex-direction: row;
+        justify-content: center;
+    }
 `
 
 const StyledSection = styled.div`
@@ -24,6 +28,9 @@ const StyledSection = styled.div`
     padding: 2rem;
     font-size: 1.2rem;
     font-weight: 400;
+    @media screen and (min-width: 1024px) {
+        width: 200px;
+    }
 `
 
 export {StyledTabsSection, StyledTabsContainer, StyledResources, StyledSection}

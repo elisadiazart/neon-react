@@ -19,7 +19,9 @@ const StyledImg = styled.img`
 
 const StyledCheckContainer = styled.div`
     margin: 0 6rem;
-
+    @media screen and (min-width: 1024px) {
+        margin: 0;
+    }
 `
 
 const StyledDiv = styled.div`

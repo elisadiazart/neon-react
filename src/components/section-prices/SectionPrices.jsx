@@ -4,13 +4,13 @@ import Button from "../button/Button"
 import Check from "../check/Check"
 import Text from "../text/Text"
 import Title from "../titles/Titles"
-import { StyledDescription, StyledInclude, StyledNumber, StyledPerX, StyledPrice, StyledPricesSection, StyledRealPrice, StyledTitle, StyledPopUp } from "./styles"
+import { StyledDescription, StyledInclude, StyledNumber, StyledPerX, StyledPrice, StyledPricesSection, StyledRealPrice, StyledTitle, StyledPopUp, StyledDiv } from "./styles"
 
 const SectionPrices = () => {
     return <StyledPricesSection>
         <Title text="Find a plan that's right for you"/>
         <Text text="Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est."/>
-        <div>
+        <StyledDiv>
         {PRICES.map(card=> (
         <StyledPrice key={card.key} background={card.color}>
             <StyledPopUp display={card.display}><img src="/images/fire.svg" alt="Popular" /> Most popular</StyledPopUp>
@@ -24,7 +24,7 @@ const SectionPrices = () => {
             ))}
         </StyledPrice>
         ))}
-        </div>
+        </StyledDiv>
     </StyledPricesSection>
 }
 

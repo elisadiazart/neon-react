@@ -2,17 +2,19 @@ import { v4 } from "uuid"
 import { FOOTER } from "../../constants/footerInfo"
 import Button from "../button/Button"
 import Title from "../titles/Titles"
-import { StyledAdvertisment, StyledText, StyledLi, StyledA, StyledNav, StyledDiv} from "./styles"
+import { StyledAdvertisment, StyledText, StyledLi, StyledA, StyledNav, StyledDiv, StyledDivText, StyledUl, StyledLinkContainer } from "./styles"
 
 const Footer = () => {
     return <footer>
         <StyledAdvertisment>
-            <Title text='Get started with Neon'/>
+            <StyledDivText>
+            <Title align='left' text='Get started with Neon'/>
             <StyledText>It only takes a few minutes to get started with Neon. Understand your users, start free, today.</StyledText>
-            <Button text='Start Free Trial'/>
+            </StyledDivText>
+            <Button text='Start Free Trial' width='400px'/>
         </StyledAdvertisment>
         <StyledNav>
-            <ul>
+            <StyledUl>
                 <li>
                     <img src="/images/logo.svg" alt="" />
                     <StyledDiv>
@@ -21,6 +23,7 @@ const Footer = () => {
                         <a href="">Privacy Policy</a>
                     </StyledDiv>
                 </li>
+                <StyledLinkContainer>
                 {FOOTER.map(li => (
                     <StyledLi key={li.key}>{li.title}
                     {li.a.map(a => (
@@ -28,7 +31,8 @@ const Footer = () => {
                     ))}
                     </StyledLi>
                 ))}
-            </ul>
+                </StyledLinkContainer>
+            </StyledUl>
         </StyledNav>
     </footer>
 }
